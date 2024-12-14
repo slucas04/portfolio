@@ -3,6 +3,22 @@
     box-sizing: border-box;
 }
 
+/* Correção do problema com background no mobile */
+body::before {
+    content: ""; /* Cria um elemento vazio */
+    position: fixed; /* Fixa o fundo na tela */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Garante que cobre a largura da viewport */
+    height: 100vh; /* Garante que cobre a altura da viewport */
+    background-image: url(img/background.png); /* Sua imagem */
+    background-size: cover; /* Ajusta o tamanho */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-position: center; /* Centraliza a imagem */
+    z-index: -1; /* Coloca atrás de todo o conteúdo */
+}
+
+/* Remove o background-image original no body */
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -10,11 +26,10 @@ body {
     font-style: normal;
     padding: 0;
     margin: 0;
-    background-image: url(img/background.png);
-    background-size: cover;
-    background-attachment: fixed;
     line-height: 1.5;
+    background: none; /* Remove o background original */
 }
+
 
 .wrapper {
     display: flex;
@@ -294,6 +309,11 @@ footer img {
 
 
 @media (max-width: 768px) {
+    body::before {
+        background-size: cover; /* Ajuste específico para mobile */
+        background-position: center top; /* Centraliza a parte mais importante */
+    }
+    
     .navbar-links {
         align-self: center;
         text-decoration: underline white;
