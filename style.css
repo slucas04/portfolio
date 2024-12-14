@@ -71,10 +71,11 @@ header img {
 /* Botão de hambúrguer (escondido por padrão em telas grandes) */
 .navbar-toggle {
     margin: 0; /* Remove margens desnecessárias */
+    margin-bottom: 10px;
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: rgb(241, 255, 85);
     cursor: pointer;
     display: none;
 }
@@ -301,6 +302,20 @@ footer img {
       border-radius: 5px;
       overflow: hidden;
       overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
+    }
+
+    .header-container {
+        height: 3rem;
+    }
+
+    header img {
+        height: 4rem;
+        padding: auto;
+        margin-top: 5px;
+    }
+
+    .header-container {
+        padding: 0;
     }
 
     
