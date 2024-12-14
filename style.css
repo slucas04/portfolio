@@ -316,13 +316,17 @@ footer img {
         gap: 20px; /* Espaçamento entre os itens */
     }
 
+    .second-main-container {
+        padding: auto;
+    }
+
     footer img {
         width: 35%;
         height: auto;
     }
 
     .secao-competencias {
-        display: block;
+        display: flex;
     }
 
 }
