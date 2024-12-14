@@ -75,7 +75,7 @@ header img {
     font-size: 24px;
     background: none;
     border: none;
-    color: rgb(241, 255, 85);
+    color: #cfb758;
     cursor: pointer;
     display: none;
 }
@@ -299,7 +299,7 @@ footer img {
         gap: 10px;
         display: none; /* Esconde os links por padrão */
         flex-direction: column;
-        background-color: rgb(241, 255, 85);
+        background-color: #cfb758;
         position: absolute;
         padding: 10px;
         top: 40px;
@@ -312,6 +312,7 @@ footer img {
 
         .navbar-links li {
             font-size: 1rem;
+            text-decoration: black;
             color: black;
         }
 
