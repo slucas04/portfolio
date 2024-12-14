@@ -295,6 +295,7 @@ footer img {
 
 @media (max-width: 768px) {
     .navbar-links {
+        align-self: center;
         text-decoration: underline white;
         gap: 10px;
         display: none; /* Esconde os links por padrão */
@@ -304,7 +305,7 @@ footer img {
         padding: 10px;
         top: 40px;
         right: 10px;
-        width: 90%;
+        width: 40%;
         border-radius: 5px;
         overflow: hidden;
         overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
