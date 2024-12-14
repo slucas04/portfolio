@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 /* Correção do problema com background no mobile */
 body::before {
     content: ""; /* Cria um elemento vazio */
@@ -354,7 +359,13 @@ footer img {
     
     .navbar-links.active {
         display: flex; /* Exibe os links quando ativo */
+        animation: slide-down 0.2s ease-out; /* Adiciona a animação */
       }
+
+      .navbar-links.closing {
+        animation: slide-up 0.2s ease-out; /* Animação para sumir */
+    }
+    
     
       .navbar-toggle {
         display: block; /* Mostra o botão de hambúrguer */
@@ -446,3 +457,26 @@ footer img {
         width: 100%;
     }
 }
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
