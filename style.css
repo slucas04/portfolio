@@ -13,6 +13,7 @@ body {
     background-image: url(img/background.png);
     background-size: cover;
     background-attachment: fixed;
+    line-height: 1.5;
 }
 
 .wrapper {
@@ -79,37 +80,6 @@ header img {
 }
 
 
-  /* Tornando a navbar responsiva */
-@media (max-width: 768px) {
-
-
-
-    .navbar-links {
-        gap: 10px;
-      display: none; /* Esconde os links por padrão */
-      flex-direction: column;
-      background-color: #444;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      width: 60%;
-      border-radius: 5px;
-      overflow: hidden;
-      overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
-    }
-
-    
-    .navbar-links.active {
-        display: flex; /* Exibe os links quando ativo */
-      }
-    
-      .navbar-toggle {
-        display: block; /* Mostra o botão de hambúrguer */
-      }
-}
-
-
-
 a {
     color: aliceblue;
     text-decoration: none;
@@ -128,9 +98,9 @@ a {
 
 
 .main-container main {
-    height: 320px;
+    height: auto;
     border-radius: 15px; /* Add border radius */
-    padding: 30px;
+    padding: 50px;
     background-color: black;
     color: aliceblue;
     flex: 5;
@@ -176,7 +146,7 @@ aside {
     margin-left: 2%;
     height: auto;
     border-radius: 15px; /* Add border radius */
-    padding: 30px;
+    padding: 25px;
     background-image: url(img/background-blur.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -185,20 +155,24 @@ aside {
 }
 
 aside img {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
     height: 130px;
     border-radius: 50%;
 }
 
 aside h1 {
     margin-top: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: xx-large;
 }
 
 aside p {
     margin-bottom: 10px;
     font-size: 1rem;
-    text-indent: 12px;
+    text-indent: 8%;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .linkedin-logo {
@@ -273,7 +247,39 @@ footer img {
     height: auto;
 }
 
+/*Curriculo*/
+
+.secao-competencias {
+    display: flex;
+}
+
+
 @media (max-width: 768px) {
+    .navbar-links {
+        gap: 10px;
+      display: none; /* Esconde os links por padrão */
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 60%;
+      border-radius: 5px;
+      overflow: hidden;
+      overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
+    }
+
+    
+    .navbar-links.active {
+        display: flex; /* Exibe os links quando ativo */
+      }
+    
+      .navbar-toggle {
+        display: block; /* Mostra o botão de hambúrguer */
+      }
+
+
+
     .main-container main h1 {
         font-family: "JetBrains Mono", monospace;
         font-weight: 100;
@@ -313,6 +319,10 @@ footer img {
     footer img {
         width: 35%;
         height: auto;
+    }
+
+    .secao-competencias {
+        display: block;
     }
 
 }
