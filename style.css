@@ -255,10 +255,6 @@ footer img {
 
 
 @media (max-width: 768px) {
-    .wrapper {
-        padding: 0;
-    }
-
     .navbar-links {
         gap: 10px;
       display: none; /* Esconde os links por padrão */
@@ -283,6 +279,7 @@ footer img {
       }
 
 
+
     .main-container main h1 {
         font-family: "JetBrains Mono", monospace;
         font-weight: 100;
@@ -301,17 +298,14 @@ footer img {
     }
 
     .main-container main {
-        font-size: xx-small;
         margin: 5%;
         height: 320px;
         border-radius: 15px; /* Add border radius */
-        padding: 0px;
+        padding: 30px;
         background-color: black;
         color: aliceblue;
         flex: 5;
         margin-bottom: 0;
-        margin: 0;
-        width: 100%;
     }
 
 
@@ -320,12 +314,6 @@ footer img {
         justify-content: center;
         flex-direction: column;
         gap: 20px; /* Espaçamento entre os itens */
-    }
-
-    .second-main-container main {
-        padding: 15px; 
-        margin-left: 0;
-        margin-right: 0;
     }
 
     footer img {
