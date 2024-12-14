@@ -295,18 +295,25 @@ footer img {
 
 @media (max-width: 768px) {
     .navbar-links {
+        text-decoration: underline white;
         gap: 10px;
-      display: none; /* Esconde os links por padrão */
-      flex-direction: column;
-      background-color: #444;
-      position: absolute;
-      top: 60px;
-      right: 20px;
-      width: 60%;
-      border-radius: 5px;
-      overflow: hidden;
-      overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
-    }
+        display: none; /* Esconde os links por padrão */
+        flex-direction: column;
+        background-color: rgb(241, 255, 85);
+        position: absolute;
+        padding: 10px;
+        top: 40px;
+        right: 10px;
+        width: 90%;
+        border-radius: 5px;
+        overflow: hidden;
+        overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
+        }
+
+        .navbar-links li {
+            font-size: 1rem;
+            color: black;
+        }
 
     .header-container {
         height: 3rem;
