@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Lucas</title>
+    <link rel="icon" style="width: 100px;" type="image/x-icon" href="img/page-icon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/meu-arquivo.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="img-container">
+                <a href="#"><img src="img/logo-portfolio.png" alt=""></a>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <button class="navbar-toggle" id="menu-toggle">
+                        &#9776; <!-- Ícone de hambúrguer -->
+                      </button>
+                    <ul class="navbar-links" id="navbar-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="curriculo.html">Experiência</a></li>
+                        <li><a href="#">Contate-me</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="second-main-container">
+        <main>
+            <h1 style="font-size: 3rem; margin-bottom: 30px; text-align: center; font-style: italic;">Conversor de Moedas</h1>
+            <hr style="margin-bottom: 30px;">
+
+            <h2>Descrição do projeto</h2>
+            <p style="text-indent: 3%;">
+                Este é um conversor de moedas desenvolvido em Java, com propósito de praticar o uso de comunicação com APIs externas na linguagem, que utiliza a API ExchangeRate-API para realizar conversões entre diferentes moedas. 
+                O projeto inclui um menu interativo para que o usuário escolha as moedas de origem e destino, insira o valor e receba a conversão calculada. Além disso, todas as conversões realizadas são registradas em um arquivo de log.
+            </p>
+        
+            <h2>Funcionalidades</h2>
+            <ul>
+                <li>Conversão entre as moedas:
+                    <ul>
+                        <li>Real brasileiro (BRL) para rand sul-africano (ZAR), naira nigeriana (NGN) e peso filipino (PHP), e vice-versa.</li>
+                    </ul>
+                </li>
+                <li>Registro de todas as conversões em um arquivo de log com a data e hora.</li>
+            </ul>
+        
+            <h2>Exemplo de execução</h2>
+        
+            <p style="text-align: center;">Menu inicial e conversão de real brasileiro (BRL) para rand sul-africano (ZAR):</p>
+            <br>
+            <div align="center">
+                <img width="50%" alt="menu" src="https://github.com/user-attachments/assets/a68d3f1b-b47b-4f85-a283-ad8a4bb0dd6e" />
+            </div>
+        <br>
+            <p style="text-align: center;">Log de conversões salvas em um arquivo .txt:</p>
+            <br>
+            <div align="center">
+                <img width="30%" alt="log" src="https://github.com/user-attachments/assets/b06e1c61-4a7a-48d9-a4b6-90ebc4225a1e" />
+            </div>
+        
+            <h2>Tecnologias utilizadas</h2>
+            <ul>
+                <li><strong>Java 17</strong>: Linguagem de programação principal do projeto.</li>
+                <li><strong>Gson</strong>: Biblioteca para manipulação de JSON como um objeto.</li>
+                <li><strong>Java HTTP Client</strong>: Para realizar requisições HTTP.</li>
+                <li><strong>ExchangeRate-API</strong>: API utilizada para obter as taxas de conversão em tempo real.</li>
+                <li><strong>Sistema de arquivos</strong>: Para leitura da chave da API e registro de logs com histórico de conversões.</li>
+            </ul>
+        
+            <h2>Estrutura do projeto</h2>
+            <ul>
+                <li><strong>Main.java</strong>: Contém o ponto de entrada do programa.</li>
+                <li><strong>MenuInicial.java</strong>: Gera o menu interativo e manipula as opções escolhidas pelo usuário.</li>
+                <li><strong>Conversor.java</strong>: Realiza as chamadas à API e faz os cálculos de conversão, além de registrar conversões em log.</li>
+            </ul>
+        
+            <h2>Como executar</h2>
+            <ol>
+                <li><strong>Requisitos:</strong>
+                    <ul>
+                        <li>Java 17 ou superior instalado.</li>
+                        <li>A biblioteca <code>Gson</code> adicionada como dependência ao projeto (não utilizei nenhum assistente, apenas instalei o jar <a href="https://mvnrepository.com/artifact/com.google.code.gson/gson" target="_blank">aqui</a> e importei ao projeto pelo IntelliJ).</li>
+                    </ul>
+                </li>
+                <li><strong>Configuração da API:</strong>
+                    <ul>
+                        <li>Crie um arquivo <code>api_key.txt</code> na pasta <code>config</code>.</li>
+                        <li>Adicione a sua chave da ExchangeRate-API no formato:
+                            <pre>
+        MINHA_CHAVE_DE_API=SUACHAVEAQUI
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Navegação:</strong>
+                    <ul>
+                        <li>Escolha uma opção no menu inicial para converter valores entre as moedas suportadas.</li>
+                        <li>Insira o valor a ser convertido no formato decimal (usando vírgula para separar os centavos).</li>
+                    </ul>
+                </li>
+            </ol>
+        
+            <h2>Observações</h2>
+            <ul>
+                <li>Certifique-se de que a chave da API esteja configurada corretamente no arquivo <code>api_key.txt</code>.</li>
+                <li>O arquivo de log será salvo no caminho especificado no código: <code>C:\Users\seu_usuario\conversor-de-moedas\src\log_de_transacoes.txt</code>. Altere o caminho para onde salvar seu projeto.</li>
+            </ul>
+        
+            <h2>Desenvolvimento</h2>
+            <p>
+                Projeto desenvolvido como parte da especialização back-end em Java de 
+                <a href="https://www.oracle.com/br/education/oracle-next-education/" target="_blank">Oracle Next Education</a> 
+                em parceria com <a href="https://www.alura.com.br/" target="_blank">Alura</a>.
+            </p>
+        </main>
+    </div>
+    <footer>
+        <img src="img/logotipo-branco.png" alt="">
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

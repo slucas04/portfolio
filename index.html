@@ -32,12 +32,14 @@
                 </div>
                 <div class="nav-container">
                     <nav>
-                        <ul>
-                            <li><a href="#">Home</a></li>
+                        <button class="navbar-toggle" id="menu-toggle">
+                            &#9776; <!-- Ícone de hambúrguer -->
+                          </button>
+                        <ul class="navbar-links" id="navbar-links">
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#">Projetos</a></li>
-                            <li><a href="#">Artigos</a></li>
-                            <li><a href="#">Experiência</a></li>
-                            <li><a href="#">Sobre mim</a></li>
+                            <li><a href="curriculo.html">Experiência</a></li>
+                            <li><a href="#">Contate-me</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,30 +51,38 @@
                     <h1>Olá, mundo!</h1>
                     <h1 class="typewritter"></h1>
                 </div>
-                <p style="text-indent: 30px;">Seja bem-vindo ao meu <strong>portfólio</strong>. Aqui, além de projetos 
+                <p style="text-indent: 3%;">Seja bem-vindo ao meu <strong>portfólio</strong>. Aqui, além de projetos 
                     desenvolvidos por mim, você vai conhecer melhor minha vida profissional. Também poderá encontrar 
                 alguns artigos escritos por mim.</p>
             </main>
             <aside>
                 <img src="img/profile.jfif" alt="">
                 <h1>Samuel Lucas</h1>
-                <p>Graduando do sexto semestre de <strong>Ciência da Computação</strong> na UNIFOR - Universidade de Fortaleza.</p>
+                <p>Graduando do sétimo semestre de <strong>Ciência da Computação</strong> na UNIFOR - Universidade de Fortaleza.</p>
                 <p>Atualmente, busca se especializar na área de <strong>Web Dev., Java Backend e Machine Learning.</strong></p>
-                <a href=""><img class="linkedin-logo" src="img/linkedin.png" alt=""></a>
-                <a href=""><img  class="github-logo" src="img/github.png" alt=""></a>
+                <div style="margin-top: 10px;" class="logos">
+                    <a href=""><img class="linkedin-logo" src="img/linkedin.png" alt=""></a>
+                    <a href=""><img  class="github-logo" src="img/github.png" alt=""></a>
+                    <a href=""><img  class="email-logo" src="img/gmail.png" alt=""></a>
+                </div>
+                
             </aside>
         </div>
-        <hr style="margin-left: 20px; margin-right: 20px;">
+        
         <div class="second-main-container">
             <main>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita ipsa velit repudiandae sapiente voluptates distinctio eligendi officia? Sint recusandae id aperiam illum, architecto et ipsa quibusdam quis facilis delectus maiores?
-                </p>
+                <h2 style="font-size: 3rem;">Projetos</h2>
+                <ul>
+                    <a href="conversordemoedas.html"><li>Conversor de Moedas</li></a>
+                    <li>Decodificador de Texto</li>
+                </ul>
             </main>
         </div>
         <footer>
-            <h1>© 2024</h1>
             <img src="img/logotipo-branco.png" alt="">
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

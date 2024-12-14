@@ -18,12 +18,11 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the wrapper takes at least the full viewport height */
+    width: 100%;
 }
 
 header {
     width: 100%;
-    position: fixed;
     padding: 0;
     margin: 0;
 }
@@ -31,9 +30,12 @@ header {
 .header-container {
     background-image: url(img/background-blur-dark.jpg);
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
+    justify-content: space-between; /* Espaça corretamente os itens à esquerda e à direita */
+    align-items: center; /* Alinha verticalmente */
+    padding: 10px 20px; /* Ajuste de espaçamento */
 }
+
 
 .img-container {
     flex: 1;
@@ -53,14 +55,60 @@ header nav ul li {
 }
 
 header nav {
-    text-align: right;
-    padding: 20px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: flex-end; /* Alinha tudo à direita */
+    gap: 20px; /* Espaçamento entre os itens */
 }
+
 
 header img {
     padding: 13px;
     height: 6rem;
 }
+
+/* Botão de hambúrguer (escondido por padrão em telas grandes) */
+.navbar-toggle {
+    margin: 0; /* Remove margens desnecessárias */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+  /* Tornando a navbar responsiva */
+@media (max-width: 768px) {
+
+
+
+    .navbar-links {
+        gap: 10px;
+      display: none; /* Esconde os links por padrão */
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 60%;
+      border-radius: 5px;
+      overflow: hidden;
+      overflow-y: auto; /* Adiciona rolagem se os links ultrapassarem o limite */
+    }
+
+    
+    .navbar-links.active {
+        display: flex; /* Exibe os links quando ativo */
+      }
+    
+      .navbar-toggle {
+        display: block; /* Mostra o botão de hambúrguer */
+      }
+}
+
+
 
 a {
     color: aliceblue;
@@ -70,17 +118,13 @@ a {
 .main-container {
     display: flex; /* Use flexbox to align main and aside side by side */
     flex: 1; /* Make main-container take up remaining space */
-    padding: 20px; /* Internal spacing for main content */
-    margin-top: 100px; /* Offset for fixed header */
+    padding: 2%; /* Internal spacing for main content */
+    margin-top: 0%; /* Offset for fixed header */
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.second-main-container {
-    display: flex; /* Use flexbox to align main and aside side by side */
-    flex: 1; /* Make main-container take up remaining space */
-    padding: 20px; /* Internal spacing for main content */
 
-}
 
 
 .main-container main {
@@ -122,24 +166,17 @@ a {
     50% { border-color: rgb(255, 255, 255); }
   }
 
-.second-main-container main {
-    height: 1000px;
-    border-radius: 15px; /* Add border radius */
-    padding: 30px;
-    background-color: black;
-    color: aliceblue;
-    margin-top: 0;
-    background-image: url(img/background-blur.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    
-}
+
 
 aside {
-    margin-left: 20px;
-    height: 320px;
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Alinha os itens verticalmente em coluna */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-left: 2%;
+    height: auto;
     border-radius: 15px; /* Add border radius */
-    padding: 15px;
+    padding: 30px;
     background-image: url(img/background-blur.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -148,31 +185,35 @@ aside {
 }
 
 aside img {
-    margin-left: 80px;
-    height: 100px;
+    margin-bottom: 15px;
+    height: 130px;
     border-radius: 50%;
 }
 
 aside h1 {
-    margin-left: 40px;
     margin-top: 0px;
     margin-bottom: 10px;
 }
 
 aside p {
-    font-size: small;
+    margin-bottom: 10px;
+    font-size: 1rem;
     text-indent: 12px;
 }
 
 .linkedin-logo {
-    margin-top: 10px;
-    margin-left: 80px;
-    height: 40px;
+    height: 2.5rem;
+    margin-bottom: 0;
 }
 
 .github-logo {
-    margin: 0;
-    height: 40px;
+    height: 2.5rem;
+    margin-bottom: 0;
+}
+
+.email-logo {
+    height: 2.5rem;
+    margin-bottom: 0;
 }
 
 
@@ -183,8 +224,43 @@ aside p {
     -webkit-filter: opacity(100%);
 }
 
+.second-main-container {
+    display: flex; /* Use flexbox to align main and aside side by side */
+    flex: 1; /* Make main-container take up remaining space */
+    padding: 30px; /* Internal spacing for main content */
+
+}
+
+.second-main-container main {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Add border radius */
+    padding: 50px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 0;
+    background-image: url(img/background-blur.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.second-main-container h1 {
+    margin: 10px;
+    margin-top: 0;
+}
+
+.second-main-container h2 {
+    margin: 20px;
+}
+
+.second-main-container li {
+    margin: 10px;
+}
+
 footer {
     display: flex;
+    justify-content: flex-end;
     height: 70px;
     text-align: right;
     padding: 10px;
@@ -192,12 +268,51 @@ footer {
     color: white;
 }
 
-footer h1 {
-    flex: 1;
-    font-weight: normal;
-    padding: 5px;
+footer img {
+    width: 10%;
+    height: auto;
 }
 
-footer img {
-    width: 110px;
+@media (max-width: 768px) {
+    .main-container main h1 {
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 2rem;
+        
+    }
+
+    aside {
+        margin: 5%;
+        margin-top: 2%;
+    }
+    
+    aside h1 {
+        font-size: xx-large;
+    }
+
+    .main-container main {
+        margin: 5%;
+        height: 320px;
+        border-radius: 15px; /* Add border radius */
+        padding: 30px;
+        background-color: black;
+        color: aliceblue;
+        flex: 5;
+        margin-bottom: 0;
+    }
+
+
+
+    .main-container{
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+
+    footer img {
+        width: 35%;
+        height: auto;
+    }
+
 }
