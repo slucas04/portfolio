@@ -316,8 +316,12 @@ footer img {
         gap: 20px; /* Espaçamento entre os itens */
     }
 
-    .second-main-container {
-        padding: auto;
+    .second-main-container main{
+        padding: 10px;
+    }
+
+    .second-main-container main li{
+        margin: 20px;
     }
 
     footer img {
