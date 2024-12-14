@@ -253,6 +253,40 @@ footer img {
     display: flex;
 }
 
+.curriculo-main-container {
+    display: flex; /* Use flexbox to align main and aside side by side */
+    flex: 1; /* Make main-container take up remaining space */
+    padding: 30px; /* Internal spacing for main content */
+
+}
+
+.curriculo-main-container main {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Add border radius */
+    padding: 50px;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 0;
+    background-image: url(img/background-blur.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.curriculo-main-container h1 {
+    margin: 10px;
+    margin-top: 0;
+}
+
+.curriculo-main-container h2 {
+    margin: 20px;
+}
+
+.curriculo-main-container li {
+    margin: 10px;
+}
+
 
 @media (max-width: 768px) {
     .navbar-links {
@@ -330,7 +364,25 @@ footer img {
     }
 
     .secao-competencias {
-        display: flex;
+        display: block;
     }
 
+    .curriculo-main-container{
+        padding: 0;
+        padding-top: 10px; 
+        padding-bottom: 10px;
+    }
+
+
+    .curriculo-main-container main{
+        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 0;
+        font-size: xx-small;
+    }
+
+    .curriculo-main-container h1{
+        font-size: 1.5rem;
+    }
 }
