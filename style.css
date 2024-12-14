@@ -288,6 +288,10 @@ footer img {
     margin: 10px;
 }
 
+.out-main-container p {
+    padding-left: 15px;
+}
+
 
 @media (max-width: 768px) {
     .navbar-links {
@@ -407,5 +411,9 @@ footer img {
         margin-top: 20px; 
         margin-bottom: 20px; 
         opacity: 40%;
+    }
+
+    .out-main-container img {
+        width: 100%;
     }
 }
