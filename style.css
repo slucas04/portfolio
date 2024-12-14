@@ -369,8 +369,8 @@ footer img {
 
     .curriculo-main-container{
         padding: 0;
-        padding-top: 10px; 
-        padding-bottom: 10px;
+        padding-top: 0; 
+        padding-bottom: 0;
     }
 
 
@@ -381,7 +381,7 @@ footer img {
     }
 
     .curriculo-main-container h1{
-        font-size: 200%;
+        font-size: 190%;
         margin: 0;
         padding: 0;
     }
