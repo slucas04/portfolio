@@ -46,6 +46,7 @@ header {
     width: 100%;
     padding: 0;
     margin: 0;
+    position: fixed;
 }
 
 .header-container {
@@ -75,6 +76,17 @@ header nav ul li {
     font-size: x-large;
 }
 
+header nav ul li a {
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: black;
+    background-color: #cfb758;
+    padding: 30px;
+}
+
+
 header nav {
     display: flex;
     align-items: center; /* Alinha verticalmente os itens */
@@ -86,6 +98,11 @@ header nav {
 header img {
     padding: 13px;
     height: 6rem;
+    transition: 0.3s;
+}
+
+header img:hover {
+    height: 7rem;
 }
 
 /* Botão de hambúrguer (escondido por padrão em telas grandes) */
@@ -110,7 +127,7 @@ a {
     display: flex; /* Use flexbox to align main and aside side by side */
     flex: 1; /* Make main-container take up remaining space */
     padding: 2%; /* Internal spacing for main content */
-    margin-top: 0%; /* Offset for fixed header */
+    margin-top: 7.5rem; /* Offset for fixed header */
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -199,16 +216,31 @@ aside p {
 .linkedin-logo {
     height: 2.5rem;
     margin-bottom: 0;
+    transition: 0.3s;
 }
 
 .github-logo {
     height: 2.5rem;
     margin-bottom: 0;
+    transition: 0.3s;
 }
 
 .email-logo {
     height: 2.5rem;
     margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.linkedin-logo:hover {
+    height: 3rem;
+}
+
+.github-logo:hover {
+    height: 3rem;
+}
+
+.email-logo:hover {
+    height: 3rem;
 }
 
 
@@ -250,7 +282,14 @@ aside p {
 }
 
 .second-main-container li {
+    font-style: italic;
     margin: 10px;
+    transition: 0.3s;
+    font-size: large;
+}
+
+.second-main-container li:hover {
+    font-size: x-large;
 }
 
 footer {
@@ -278,6 +317,7 @@ footer img {
     display: flex; /* Use flexbox to align main and aside side by side */
     flex: 1; /* Make main-container take up remaining space */
     padding: 30px; /* Internal spacing for main content */
+    
 
 }
 
@@ -288,7 +328,7 @@ footer img {
     padding: 50px;
     background-color: black;
     color: aliceblue;
-    margin-top: 0;
+    margin-top: 7.5rem;
     background-image: url(img/background-blur.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -407,14 +447,20 @@ footer img {
         justify-content: center;
         flex-direction: column;
         gap: 20px; /* Espaçamento entre os itens */
+        margin-top: 3rem;
     }
 
     .second-main-container main{
-        padding: 10px;
+        padding: 30px;
+        padding-left: 5px;
+    }
+
+    .second-main-container h2 {
+        text-align: center;
     }
 
     .second-main-container main li{
-        margin: 20px;
+        margin: 5px;
     }
 
     footer img {
@@ -437,6 +483,7 @@ footer img {
         padding: 20px;
         border-radius: 0;
         font-size: small;
+        margin-top: 3rem;
     }
 
     .out-main-container h1{
