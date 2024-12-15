@@ -15,3 +15,19 @@ menuToggle.addEventListener("click", () => {
         navbarLinks.classList.add("active");
     }
 });
+
+document.querySelectorAll('.slider-nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault(); // Evita o comportamento padrão de navegação
+    
+      const targetId = this.getAttribute('href').substring(1); // Pega o ID da âncora
+      const targetElement = document.getElementById(targetId); // Seleciona o elemento alvo
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth', // Aplica o efeito de rolagem suave
+          block: 'nearest', // Alinha o item ao mais próximo
+        });
+      }
+    });
+  });
