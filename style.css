@@ -78,7 +78,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 header nav ul li a:hover {
@@ -398,6 +398,7 @@ footer img {
     background-image: url(img/background-blur.jpg);
     background-size: cover;
     background-attachment: fixed;
+    font-size: large;
     
 }
 
@@ -418,6 +419,38 @@ footer img {
     padding-left: 15px;
 }
 
+.linguagens img {
+    width: 18rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.linguagens img:hover {
+    width: 22rem;
+    transition: 0.4s;
+}
+
+.r img {
+    width: 9rem;
+}
+
+.r img:hover {
+    width: 12rem;
+}
+
+.javascript {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    width: 20rem;
+}
+
+.javascript img {
+    width: 4.5rem;
+}
+
+.javascript img:hover {
+    width: 6rem;
+}
 
 @media (max-width: 768px) {
     body::before {
@@ -534,9 +567,14 @@ footer img {
         height: auto;
     }
 
+
+
+
     .secao-competencias {
         display: block;
     }
+
+
 
     .out-main-container{
         padding: 0;
@@ -569,6 +607,12 @@ footer img {
     .out-main-container img {
         width: 100%;
     }
+
+    .linguagens img {
+        width: 9rem;
+    }
+
+
 }
 
 @keyframes slide-down {
