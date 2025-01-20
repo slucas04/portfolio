@@ -290,18 +290,32 @@ aside p {
 
 
 .second-main-container li {
-    font-size: x-large;
+    font-size: 2rem;
     font-style: italic;
+    font-weight: bolder;
     margin: 10px;
     transition: 0.3s;
     margin-left: 0;
 }
 
 .second-main-container li:hover {
-    font-size: xx-large;
-    color: aquamarine;
-    text-decoration: underline aquamarine;
+    font-size: 2.5rem;
 }
+
+.second-main-container img {
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+#repositorio {
+   width: 12rem;
+}
+
+#repositorio:hover {
+    width: 14rem;
+    transition: 0.3s;
+}
+
+
 
 .slider-wrapper {
     position: relative;
@@ -450,6 +464,17 @@ footer img {
 
 .javascript img:hover {
     width: 6rem;
+}
+
+.contatos img {
+    width: 4rem;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.contatos img:hover {
+    transition: 0.5s;
+    width: 5rem;
+    filter: none;
 }
 
 @media (max-width: 768px) {
