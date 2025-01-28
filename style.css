@@ -83,7 +83,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: black;
-    background-color: #cfb758;
+    background-color: #a1d9b5;
     padding: 30px;
 }
 
@@ -186,7 +186,7 @@ aside {
     height: auto;
     border-radius: 15px; /* Add border radius */
     padding: 25px;
-    background-image: url(img/background-blur.jpg);
+    background-image: url(img/background-blur-dark.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: aliceblue;
@@ -267,7 +267,7 @@ aside p {
     background-color: black;
     color: aliceblue;
     margin-top: 0;
-    background-image: url(img/background-blur.jpg);
+    background-image: url(img/background-blur-dark.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-size: large;
@@ -409,7 +409,7 @@ footer img {
     background-color: black;
     color: aliceblue;
     margin-top: 7.5rem;
-    background-image: url(img/background-blur.jpg);
+    background-image: url(img/background-blur-dark.jpg);
     background-size: cover;
     background-attachment: fixed;
     font-size: large;
