@@ -31,3 +31,25 @@ document.querySelectorAll('.slider-nav a').forEach(anchor => {
       }
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const linkContato = document.getElementById('link-contato');
+    const asideContato = document.getElementById('contato');
+    const pageTop = document.getElementById('body-wrapper');
+  
+    linkContato.addEventListener('click', function(e) {
+      e.preventDefault(); // previne a ação padrão da âncora
+  
+      // Faz o scroll suave até o aside
+      pageTop.scrollIntoView({ behavior: 'smooth' });
+  
+      asideContato.classList.add('blink-aside');
+      asideContato.addEventListener('animationend', function() {
+        asideContato.classList.remove('blink-aside');
+      }, { once: true });
+      
+    });
+  });
+
+
+  

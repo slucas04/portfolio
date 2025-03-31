@@ -25,13 +25,13 @@
     <script type="text/javascript" src="js/meu-arquivo.js"></script>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="body-wrapper">
         <header>
             <div class="header-container">
                 <div class="img-container">
                     <a href="index.html"><img src="img/logo-portfolio.png" alt=""></a>
                 </div>
-                <div class="nav-container">
+                <div class="nav-container" id="nav-container">
                     <nav>
                         <button class="navbar-toggle" id="menu-toggle">
                             &#9776; <!-- Ícone de hambúrguer -->
@@ -41,7 +41,7 @@
                             <li><a href="index.html#projects-section">Projetos</a></li>
                             <!-- <li><a href="#">Artigos</a></li> -->
                             <li><a href="curriculo.html">Experiência</a></li>
-                            <li><a href="contato.html">Contate-me</a></li>
+                            <li><a href="index.html#contato" id="link-contato">Contate-me</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,15 +53,13 @@
                     <h1>Olá, mundo!</h1>
                     <h1 class="typewritter"></h1>
                 </div>
-                <p style="text-indent: 3%;">Seja muito bem-vindo ao meu <strong>portfólio profissional!</strong> Aqui você encontrará uma apresentação completa do meu trabalho, com projetos desenvolvidos ao longo da minha trajetória acadêmica e profissional, detalhando as soluções criativas e técnicas aplicadas em cada um deles. Este espaço foi pensado para que você possa conhecer não apenas os resultados dos projetos, mas também minha abordagem profissional, meu compromisso com a excelência e a minha constante busca por inovação.</p>
-                <!-- <p style="text-indent: 3%;">Além dos projetos, compartilho também artigos de minha autoria, onde exploro temas relevantes da área, compartilho insights, experiências e reflexões sobre tecnologia e desenvolvimento de soluções eficientes.</p> -->
-                <p style="text-indent: 3%;">Fico à disposição para discutirmos como minhas habilidades podem contribuir para suas necessidades ou projetos. Sinta-se à vontade para explorar, conhecer meu trabalho em detalhes e entrar em contato. Será um prazer colaborar com você!</p>
+                <p>Bem-vindo ao meu <strong>portfólio</strong>! Aqui você encontrará projetos que desenvolvi, mostrando minha forma de trabalhar e as soluções que já apliquei. Caso tenha interesse em colaboração ou queira saber mais, estou à disposição para conversar.</p>
             </main>
-            <aside>
+            <aside id="contato">
                 <img src="img/profile.png" alt="">
                 <h1>Samuel Lucas</h1>
                 <p>Graduando do sexto semestre de <strong>Ciência da Computação</strong> na UNIFOR - Universidade de Fortaleza.</p>
-                <p>Atualmente, busco me especializar na área de Web Development, Java Backend e Machine Learning.</p>
+            
                 <div style="margin-top: 10px;" class="logos">
                     <a href="https://www.linkedin.com/in/samuellucas-dev/" target="_blank"><img class="linkedin-logo" src="img/linkedin.png" alt=""></a>
                     <a href="https://github.com/slucas04" target="_parent"><img  class="github-logo" src="img/github.png" alt=""></a>
@@ -85,18 +83,18 @@
                     <div>
                     
                         <ul>
-                          <div style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
-                            <img style="width: 12rem;" src="img/java.png" alt="">
-                            <img style="width: 12rem;" src="img/spring.png" alt="">
-                            <img style="width: 12rem;" src="img/flyway.png" alt="">
-                            <img style="width: 12rem;" src="img/mysql.png" alt="">
-                            <img style="width: 12rem;" src="img/jwt.png" alt="">
+                          <div class="ferramentas" style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
+                            <img src="img/java.png" alt="">
+                            <img src="img/spring.png" alt="">
+                            <img src="img/flyway.png" alt="">
+                            <img src="img/mysql.png" alt="">
+                            <img src="img/jwt.png" alt="">
                           </div>
                         </ul>
                         
                         
                         <ul>
-                          <p style="font-weight: bolder; font-size: larger;">🚀 Funcionalidades</p>
+                          <p style="font-weight: bolder; font-size: larger;">Funcionalidades</p>
                           <p style="margin: 1rem;"><i class="fa fa-circle-o" aria-hidden="true" style="font-size: xx-small; vertical-align: middle; margin-right: 0.5rem;"></i> Autenticação de usuários com JWT.</p>
                           <p style="margin: 1rem;"><i class="fa fa-circle-o" aria-hidden="true" style="font-size: xx-small; vertical-align: middle; margin-right: 0.5rem;"></i> Gerenciamento de tópicos e respostas (CRUD).</p>
                           <p style="margin: 1rem;"><i class="fa fa-circle-o" aria-hidden="true" style="font-size: xx-small; vertical-align: middle; margin-right: 0.5rem;"></i> Validações automáticas de dados.</p>
@@ -112,12 +110,12 @@
                     <a href="https://github.com/slucas04/literalura" target="_blank"><li><i class="fa fa-book" aria-hidden="true"></i>  Literalura</li></a>
                     <p>Projeto de integração com a API Gutendex para consultar livros e autores. Projetado como parte do programa Oracle Next Education em parceria com a Alura. Desenvolvido com Spring Boot e JPA, usando PostgreSQL para armazenamento.</p>
                     <ul>
-                        <div style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
-                            <img style="width: 12rem;" src="img/java.png" alt="">
-                            <img style="width: 12rem;" src="img/spring.png" alt="">
-                            <img style="width: 12rem;" src="img/postgresql.png" alt="">
-                            <img style="width: 12rem;" src="img/jackson.png" alt="">
-                            <img style="width: 12rem;" src="img/gutendex.png" alt="">
+                        <div class="ferramentas" style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
+                            <img src="img/java.png" alt="">
+                            <img src="img/spring.png" alt="">
+                            <img src="img/postgresql.png" alt="">
+                            <img src="img/jackson.png" alt="">
+                            <img src="img/gutendex.png" alt="">
                         </div>
                     </ul>
                     <div class="slider-wrapper">
@@ -142,7 +140,7 @@
                     <p>Aplicação web simples que permite criptografar e descriptografar mensagens de texto por meio de substituições específicas de caracteres. Desenvolvido em JavaScript, HTML e CSS, ele foi criado como parte do challenge do Oracle Next Education, em parceria com a Alura, para aplicar conceitos de lógica e web development.</p>
                     <p style="margin-top: 1rem;">Link para o site do projeto: <a href="https://challenge-decodificador-ivory.vercel.app" target="_blank" style="text-decoration: underline;">https://challenge-decodificador-ivory.vercel.app</a></p>
                     <ul>
-                        <div style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
+                        <div class="ferramentas" style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
                             <img style="width: 4rem;" src="img/javascript.png" alt="">
                             <img style="width: 4rem;" src="img/html.png" alt="">
                             <img style="width: 4rem;" src="img/css.png" alt="">
@@ -165,10 +163,10 @@
                     <a href="https://github.com/slucas04/conversor-de-moedas" target="_blank"><li><i class="fa" style="margin-right: 10px;">&#xf0d6;</i>Conversor de Moedas</li></a>
                     <p>Conversor de moedas em Java que utiliza a ExchangeRate-API para realizar conversões entre diferentes moedas. Inclui menu interativo, registro de histórico em logs e integração com APIs externas. Desenvolvido como parte do programa de especialização em Back-end, Oracle Next Education, em parceria com a Alura.</p>
                     <ul>
-                        <div style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
-                            <img style="width: 12rem;" src="img/java.png" alt="">
-                            <img style="width: 12rem;" src="img/gson.png" alt="">
-                            <img style="width: 12rem;" src="img/exchangerate.png" alt="">
+                        <div class="ferramentas" style="display: flex; align-items: center; justify-content: center; margin: 2rem; gap: 1rem;">
+                            <img src="img/java.png" alt="">
+                            <img src="img/gson.png" alt="">
+                            <img src="img/exchangerate.png" alt="">
                         </div>
                     </ul>
                     <div class="slider-wrapper">
